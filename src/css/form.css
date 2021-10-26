@@ -1,0 +1,157 @@
+
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    
+  }
+
+  
+  .card {
+    margin-left: -20%;
+    width: 100%;
+    height: max-content;
+    padding: 270px 90px 90px 90px;
+    position: relative;
+  }
+  
+  .card h2 {
+    color: rgba(0, 0, 0, 0.3);
+    font-size: 50px;
+    padding-left: 38%;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+  }
+  
+  .card .row {
+      margin-left: 35%;
+    position: relative;
+    width: 50%;
+    display: grid;
+    grid: auto / auto auto;
+    grid-template-columns: repeat(auto-fit,minmax(40%, 1fr));
+    grid-gap: 30px;
+  }
+
+  
+  .card .row .col {
+    position: relative;
+    width: 100%;
+    margin: 30px 10px 30px 40px;
+    transition: 0.5s;
+  }
+  
+  .card .row .form-group {
+    position: relative;
+    width: 100%;
+    height: 40px;
+    color: #ffeba7;
+  }
+  
+  .card .row .form-group input {
+    position: absolute;
+    width: 70%;
+    height: 130%;
+    background: transparent;
+    outline: none;
+    font-size: 18px;
+    padding: 10px 0 10px 20px;
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.3);
+    color: #ffeba7;
+    border-radius: 50px;
+  }
+  .card .row .form-group textarea {
+    position: absolute;
+    width: 100%;
+    background: transparent;
+    outline: none;
+    font-size: 16px;
+    padding: 10px 10px;
+    padding-left: 20px;
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.3);
+    color: #ffeba7;
+    border-radius: 50px;
+
+  }
+  
+  .card .row .form-group label {
+    line-height: 40px;
+    color: #ffeba7;
+    font-size: 20px;
+    margin: 0 0 0 30px;
+    display: block;
+    pointer-events: none;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .row .col:nth-child(6) {
+    margin-top: 64px;
+  }
+  
+  .card .row .form-group input:focus,
+  .card .row .form-group textarea:focus {
+    border: 5px solid #ffeba7;
+    transition: all 0.5s;
+  }
+  
+  .card .row input[type="submit"] {
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.3);
+    padding: 2px;
+    margin-left: 320px;
+    height: 100%;
+    width: 30%;
+    cursor: pointer;
+    outline: none;
+    background: transparent;
+    text-transform: uppercase;
+    color: #ffeba7;
+    line-height: 40px;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 45px;
+    transition: all 0.4s;
+  }
+  
+  .card .row input[type="submit"]:hover {
+    border: 5px solid rgba(255, 255, 255, 1);
+    color: #ffeba7;
+    transition: all 0.4s;
+  }
+
+  .alert {
+    border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+    line-height:1.5em;
+    background:transparent;
+    border:solid 3px orangered;
+    width: 180%;
+    margin-left: 50%;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 800;
+    font-style: italic;
+    box-shadow: 2px 2px 0 orangered;
+    margin-top: 3%;
+    color: #ffeba7;
+  }
+  
+  @media screen and (max-width: 900px) {
+    .card .row {
+      grid-template-columns: repeat(auto-fit,minmax(70%, 1fr));
+    }
+    
+    .card {
+      padding: 20px;
+    }
+    
+    .card h2 {
+      font-size: 34px;
+    }
+    
+    .card .row input[type="submit"] {
+      width: 100%;
+    }
+  }
